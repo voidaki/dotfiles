@@ -188,11 +188,6 @@ _G.packer_plugins = {
     path = "/home/aki/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["smear-cursor.nvim"] = {
-    loaded = true,
-    path = "/home/aki/.local/share/nvim/site/pack/packer/start/smear-cursor.nvim",
-    url = "https://github.com/sphamba/smear-cursor.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/aki/.local/share/nvim/site/pack/packer/start/telescope.nvim",

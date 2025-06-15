@@ -3,14 +3,19 @@ require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
     undercurl = true,            -- enable undercurls
     commentStyle = { italic = true },
-    functionStyle = {},
-    keywordStyle = { italic = true},
-    statementStyle = { bold = true },
-    typeStyle = {},
+    functionStyle = { bold = false},
+    keywordStyle = {italic = false, bold = false},
+    stringStyle = { bold = false },
+    variableStyle = { bold = false },
+    statementStyle = { bold = false },
+    typeStyle = { bold = false },
     transparent = true,         -- do not set background color
     dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
     terminalColors = true,       -- define vim.g.terminal_color_{0,17}
     colors = {                   -- add/modify theme and palette colors
+        ui = {
+            fg = "#c8caca"
+        },
         syn = {
             variable = "#e0915c",
             type = "#aa64c7"
@@ -35,7 +40,7 @@ require('kanagawa').setup({
             winterBlue = "#252535",
             autumnGreen = "#76946A",
             autumnRed = "#C34043",
-            autumnYellow = "#DCA561",
+            autumnYellow = "#c8caca",
 
             -- Diag
             samuraiRed = "#E82424",
@@ -142,15 +147,9 @@ require('kanagawa').setup({
         },
         theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
     },
-    overrides = function(colors) -- add/modify highlights
-        return {}
-    end,
     theme = "wave",              -- Load "wave" theme
     background = {               -- map the value of 'background' option to a theme
         dark = "wave",           -- try "dragon" !
         light = "lotus"
     },
 })
-
--- setup must be called before loading
-vim.cmd("colorscheme kanagawa")

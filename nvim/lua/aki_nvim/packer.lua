@@ -57,6 +57,6 @@ return require('packer').startup(function(use)
     use('L3MON4D3/LuaSnip')
     use('saadparwaiz1/cmp_luasnip')
 
-    use('sphamba/smear-cursor.nvim')
+    -- use('sphamba/smear-cursor.nvim')
     use('karb94/neoscroll.nvim')
 end)

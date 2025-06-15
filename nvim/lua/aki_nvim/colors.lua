@@ -12,6 +12,9 @@ function ColorMyPencils(color)
     highlight NormalNC guibg=NONE
     ]])
 
-end
+    vim.cmd([[
+    highlight BufferLineBufferSelected gui=bold,italic
+    ]])
 
+end
 ColorMyPencils()

@@ -1,11 +1,12 @@
-local bufferline = require('bufferline')
-vim.opt.termguicolors = true
 require("bufferline").setup{
     options = {
         mode = "buffers",
         diagnostics = "nvim_lsp",
-        style_preset = bufferline.style_preset.default,
         themable = true,
+        indicator = {
+            style = "underline",
+            sp = "#c70039",
+        },
         offsets = {
             {
                 filetype = "NvimTree",
@@ -14,6 +15,16 @@ require("bufferline").setup{
                 separator = true,
             },
         },
-        separator_style = "thin",
+        separator_style = "",
     },
+    highlights = {
+        buffer_selected = {
+            italic = true,
+            bold = true,
+        },
+        diagnostic_selected = {
+            bold = true,
+            italic = true,
+        }
+    }
 }

@@ -10,13 +10,12 @@ function ColorMyPencils(color)
     highlight SignColumn guibg=NONE
     highlight FoldColumn guibg=NONE
     highlight NormalNC guibg=NONE
+    highlight Normal guifg=#d8caca
     ]])
-
 end
 
 vim.api.nvim_create_autocmd("VimEnter", {
     callback = function()
-        -- Your code here, e.g.:
         ColorMyPencils()
     end,
 })

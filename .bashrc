@@ -132,6 +132,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+alias heimdall='cd /home/aki/snakepit/multi_messenger_astro; conda activate multimessenger'
+alias cosmic='cd /home/aki/snakepit/multi_messenger_astro; nvim .'
+alias v='nvim .'
+
 # Adds spicetify to path
 export PATH=$PATH:/home/aki/.spicetify
 # Change color of the user@host

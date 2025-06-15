@@ -8,7 +8,7 @@
 local colors = {
   BG = 'None', -- Dark background
   FG = '#c5c4c4', -- Light foreground for contrast
-  YELLOW = '#e8b75f', -- Vibrant yellow
+  YELLOW = '#fabd2f', -- Vibrant yellow
   CYAN = '#00bcd4', -- Soft cyan
   DARKBLUE = '#fb4934', -- Deep blue
   GREEN = '#00e676', -- Bright green

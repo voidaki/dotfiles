@@ -9,6 +9,9 @@ vim.cmd([[
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.numberwidth = 5
+
+vim.opt.cursorline = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
